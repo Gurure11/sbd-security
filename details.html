@@ -68,6 +68,20 @@
 		#contact{ 
 			margin-right: 12px;
 		}
+		#sub{
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			
+		}
+		#sub:hover{
+			colour: blue;
+			background-color: white;
+			opacity: 0.6;
+			transition: 0.17s;
+			cursor: pointer;
+		}
 </style>
 </head>
 <body>
@@ -152,8 +166,11 @@
 	<br>
 	<label>Fast Lane Johannesburg 2 - $7.00</label>
 	<input type="checkbox" name="fastLane2" checkbox="checked"><br>
+		<br>
 		<label>Email</label>
-		<input type="email" name="email" placeholder="Email">
+		<input type="email" name="email" placeholder="Email"><br>
+		<br>
+		<button  id="sub"  type="submit">Submit</button>
 		</form>
 	<br>
 	<a href="card.html">Payment</a>
