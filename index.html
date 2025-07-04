@@ -27,10 +27,28 @@
       }
     }
 
-    img.uniform-img {
+    .service-img {
       height: 250px;
       width: 100%;
       object-fit: cover;
+      object-position: center;
+    }
+    
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    
+    @media (max-width: 640px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -52,9 +70,9 @@
   <section class="w-full h-[70vh]">
     <div class="swiper mySwiper h-full">
       <div class="swiper-wrapper">
-        <div class="swiper-slide bg-cover bg-center" style="background-image: url('images/sec.jpg')"></div>
-        <div class="swiper-slide bg-cover bg-center" style="background-image: url('images/cam.jpg')"></div>
-        <div class="swiper-slide bg-cover bg-center" style="background-image: url('images/arr.jpg')"></div>
+        <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
       </div>
     </div>
   </section>
@@ -87,50 +105,50 @@
       <div class="mb-12">
         <h3 class="text-2xl font-semibold mb-2 animate-text">Manned Guarding</h3>
         <p class="mb-4 animate-text">Our well-trained security officers provide 24/7 physical presence at commercial, industrial, and residential sites. They deter criminal activity and act quickly in emergencies.</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/das.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/sea.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/moni.jpg" class="rounded-lg shadow-md uniform-img" />
+        <div class="image-grid">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security guard on duty" />
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security team" />
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security personnel" />
         </div>
       </div>
 
       <div class="mb-12">
         <h3 class="text-2xl font-semibold mb-2 animate-text">Mobile Patrols</h3>
         <p class="mb-4 animate-text">Our patrol vehicles conduct regular and randomized patrols with high visibility, equipped with GPS and two-way radios for rapid response and deterrence.</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/mobile1.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/mobile2.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/mobile3.jpg" class="rounded-lg shadow-md uniform-img" />
+        <div class="image-grid">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security vehicle" />
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Patrol car" />
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Mobile patrol" />
         </div>
       </div>
 
       <div class="mb-12">
         <h3 class="text-2xl font-semibold mb-2 animate-text">Alarm Monitoring & Response</h3>
         <p class="mb-4 animate-text">State-of-the-art alarm systems monitored 24/7 by our control room. Our response teams are dispatched instantly to assess and neutralize threats.</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/alarm.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/alarms.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/moni.jpg" class="rounded-lg shadow-md uniform-img" />
+        <div class="image-grid">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Alarm system" />
+          <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a7d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Control room" />
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security monitoring" />
         </div>
       </div>
 
       <div class="mb-12">
         <h3 class="text-2xl font-semibold mb-2 animate-text">Access Control</h3>
         <p class="mb-4 animate-text">We implement and maintain biometric, card-based, and keypad entry systems to manage who enters your premises—ideal for businesses and high-security zones.</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/das.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/sec.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/cam.jpg" class="rounded-lg shadow-md uniform-img" />
+        <div class="image-grid">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Access control system" />
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Biometric scanner" />
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Security checkpoint" />
         </div>
       </div>
 
       <div>
         <h3 class="text-2xl font-semibold mb-2 animate-text">Event Security</h3>
         <p class="mb-4 animate-text">From concerts and sports events to private gatherings, our experienced teams provide crowd control, VIP protection, and emergency response management.</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/vip.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/event1.jpg" class="rounded-lg shadow-md uniform-img" />
-          <img src="images/event2.jpg" class="rounded-lg shadow-md uniform-img" />
+        <div class="image-grid">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Event security" />
+          <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="Crowd control" />
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-lg shadow-md service-img" alt="VIP protection" />
         </div>
       </div>
     </div>
