@@ -10,17 +10,27 @@
   <style>
     .fade-in { animation: fadeIn 1.5s ease-in-out; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    #prof{
-      color: black;
-      background-color: black;
-      font-size: 30px;
+
+    .animate-text {
+      animation: slideUp 1s ease-in-out forwards;
+      opacity: 0;
     }
-    #prof:hover{
-      color: red;
-      background-color: blue;
-      opacity: 0.7;
-      transition: 0.18s;
-      cursor: 
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    img.uniform-img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -29,11 +39,11 @@
   <!-- NAVBAR -->
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-blue-800">SBNGD Security  Cell 074 760 4444</h1>
+      <h1 class="text-xl font-bold text-blue-800 animate-text">SBNGD Security Cell 074 760 4444</h1>
       <nav class="space-x-4 text-sm font-semibold">
-        <a href="#about" class="hover:text-blue-700">About Us</a>
-        <a href="#services" class="hover:text-blue-700">Services</a>
-        <a href="#contact" class="hover:text-blue-700">Contact</a>
+        <a href="#about" class="hover:text-blue-700 animate-text">About Us</a>
+        <a href="#services" class="hover:text-blue-700 animate-text">Services</a>
+        <a href="#contact" class="hover:text-blue-700 animate-text">Contact</a>
       </nav>
     </div>
   </header>
@@ -51,78 +61,76 @@
 
   <!-- ABOUT US -->
   <section id="about" class="max-w-7xl mx-auto p-8 fade-in">
-    <h2 class="text-3xl font-bold text-blue-900 mb-4">About Us</h2>
-    <p class="mb-4">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4 animate-text">About Us</h2>
+    <p class="mb-4 animate-text">
       <strong>SBNGD Security</strong> is a premier security services provider headquartered in Randburg, South Africa.
       Established in 2020, we deliver tailored solutions to ensure safety and peace of mind across various sectors,
       including residential estates, public institutions, commercial properties, and events.
     </p>
-    <p class="mb-4">
+    <p class="mb-4 animate-text">
       Our team is composed of highly trained professionals equipped with the latest technology to respond effectively
       to threats and incidents. With a strong focus on integrity, professionalism, and accountability, we have earned
       the trust of numerous clients and partners across the country.
     </p>
-    <p>
+    <p class="animate-text">
       In response to the growing crime rates, our mission is to be a reliable and efficient force that supports law
       enforcement by protecting people, properties, and public spaces.
     </p>
-  </section><br><br>
+  </section>
 
   <!-- SERVICES -->
   <section id="services" class="bg-white py-12 fade-in">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-3xl font-bold mb-8 text-blue-900">Our Services</h2>
+      <h2 class="text-3xl font-bold mb-8 text-blue-900 animate-text">Our Services</h2>
 
-      <!-- Manned Guarding -->
+      <!-- Service Block Template -->
       <div class="mb-12">
-        <h3 class="text-2xl font-semibold mb-2">Manned Guarding</h3>
-        <p class="mb-4">Our well-trained security officers provide 24/7 physical presence at commercial, industrial, and residential sites. They deter criminal activity and act quickly in emergencies.</p>
+        <h3 class="text-2xl font-semibold mb-2 animate-text">Manned Guarding</h3>
+        <p class="mb-4 animate-text">Our well-trained security officers provide 24/7 physical presence at commercial, industrial, and residential sites. They deter criminal activity and act quickly in emergencies.</p>
         <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/das.jpg" class="rounded-lg shadow-md" />
-          <img src="images/sea.jpg" class="rounded-lg shadow-md" />
-          <img src="images/moni.jpg" class="rounded-lg shadow-md" />
+          <img src="images/das.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/sea.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/moni.jpg" class="rounded-lg shadow-md uniform-img" />
         </div>
       </div>
 
-      <!-- Mobile Patrols -->
       <div class="mb-12">
-        <h3 class="text-2xl font-semibold mb-2">Mobile Patrols</h3>
-        <p class="mb-4">Our patrol vehicles conduct regular and randomized patrols with high visibility, equipped with GPS and two-way radios for rapid response and deterrence.</p>
+        <h3 class="text-2xl font-semibold mb-2 animate-text">Mobile Patrols</h3>
+        <p class="mb-4 animate-text">Our patrol vehicles conduct regular and randomized patrols with high visibility, equipped with GPS and two-way radios for rapid response and deterrence.</p>
         <div class="grid md:grid-cols-3 gap-4">
-          <img src="mobile1.jpg" class="rounded-lg shadow-md" />
-          <img src="mobile2.jpg" class="rounded-lg shadow-md" />
-          <img src="mobile3.jpg" class="rounded-lg shadow-md" />
+          <img src="images/mobile1.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/mobile2.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/mobile3.jpg" class="rounded-lg shadow-md uniform-img" />
         </div>
       </div>
 
-      <!-- Alarm Monitoring -->
       <div class="mb-12">
-        <h3 class="text-2xl font-semibold mb-2">Alarm Monitoring & Response</h3>
-        <p class="mb-4">State-of-the-art alarm systems monitored 24/7 by our control room. Our response teams are dispatched instantly to assess and neutralize threats.</p>
+        <h3 class="text-2xl font-semibold mb-2 animate-text">Alarm Monitoring & Response</h3>
+        <p class="mb-4 animate-text">State-of-the-art alarm systems monitored 24/7 by our control room. Our response teams are dispatched instantly to assess and neutralize threats.</p>
         <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/alarm.jpg" class="rounded-lg shadow-md" />
-          <img src="images/alarms.jpg" class="rounded-lg shadow-md" />
-        
+          <img src="images/alarm.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/alarms.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/moni.jpg" class="rounded-lg shadow-md uniform-img" />
         </div>
       </div>
 
-      <!-- Access Control -->
       <div class="mb-12">
-        <h3 class="text-2xl font-semibold mb-2">Access Control</h3>
-        <p class="mb-4">We implement and maintain biometric, card-based, and keypad entry systems to manage who enters your premises—ideal for businesses and high-security zones.</p>
+        <h3 class="text-2xl font-semibold mb-2 animate-text">Access Control</h3>
+        <p class="mb-4 animate-text">We implement and maintain biometric, card-based, and keypad entry systems to manage who enters your premises—ideal for businesses and high-security zones.</p>
         <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/das.jpg" class="rounded-lg shadow-md" />
-          <img src="images/sec.jpg" class="rounded-lg shadow-md" />
-          
+          <img src="images/das.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/sec.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/cam.jpg" class="rounded-lg shadow-md uniform-img" />
         </div>
       </div>
 
-      <!-- Event Security -->
       <div>
-        <h3 class="text-2xl font-semibold mb-2">Event Security</h3>
-        <p class="mb-4">From concerts and sports events to private gatherings, our experienced teams provide crowd control, VIP protection, and emergency response management.</p>
+        <h3 class="text-2xl font-semibold mb-2 animate-text">Event Security</h3>
+        <p class="mb-4 animate-text">From concerts and sports events to private gatherings, our experienced teams provide crowd control, VIP protection, and emergency response management.</p>
         <div class="grid md:grid-cols-3 gap-4">
-          <img src="images/vip.jpg" class="rounded-lg shadow-m
+          <img src="images/vip.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/event1.jpg" class="rounded-lg shadow-md uniform-img" />
+          <img src="images/event2.jpg" class="rounded-lg shadow-md uniform-img" />
         </div>
       </div>
     </div>
@@ -130,10 +138,10 @@
 
   <!-- CONTACT -->
   <section id="contact" class="bg-blue-50 py-12 px-8 fade-in">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto animate-text">
       <h2 class="text-3xl font-bold text-blue-900 mb-4">Contact Us</h2>
       <p class="mb-2">📍 <strong>Address:</strong> 4 Orwell Drive, Three Rivers, 1929 South Africa</p>
-      <p class="mb-2">📞 <strong>Phone:</strong> 010 634 2549/074 760 4444</p>
+      <p class="mb-2">📞 <strong>Phone:</strong> 010 634 2549 / 074 760 4444</p>
       <p class="mb-2">📧 <strong>Email:</strong> <a href="mailto:receptionsbn@gmail.com" class="text-blue-700 underline">receptionsbn@gmail.com</a></p>
     </div>
   </section>
@@ -150,6 +158,18 @@
       autoplay: { delay: 4000 },
       effect: "fade",
     });
+
+    // Trigger fade-up animation on scroll
+    const elements = document.querySelectorAll('.animate-text');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
