@@ -3,111 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Malilani Commodities UK Ltd – Trusted copper cathode and gold trade from Africa to global markets." />
-  <title>Malilani Commodities UK Ltd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>SBNGD Security</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #141414;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .section h2 {
-      color: #222;
-      border-left: 4px solid #0066cc;
-      padding-left: 0.5rem;
-    }
-    .cta {
-      background: #0066cc;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-      border-radius: 8px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .contact-box {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #eaeaea;
-      font-size: 0.9rem;
-    }
+    .fade-in { animation: fadeIn 1.5s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 scroll-smooth">
 
-  <header>
-    <h1>Malilani Commodities UK Ltd</h1>
-    <p>African Minerals. Global Markets. Trusted Trade.</p>
+  <!-- NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-800">SBNGD Security</h1>
+      <nav class="space-x-4 text-sm font-semibold">
+        <a href="#about" class="hover:text-blue-700">About Us</a>
+        <a href="#services" class="hover:text-blue-700">Services</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-
-    <div class="section">
-      <h2>Who We Are</h2>
-      <p>Malilani Commodities UK Ltd is a London-based strategic commodities sourcing and trading firm, specializing in high-value mineral exports from sub-Saharan Africa. We connect vetted African producers of copper cathodes and gold with global buyers through secure, transparent, and compliant trading structures.</p>
+  <!-- HERO SLIDER -->
+  <section class="w-full h-[70vh]">
+    <div class="swiper mySwiper h-full">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-cover bg-center" style="background-image: url('slide1.jpg')"></div>
+        <div class="swiper-slide bg-cover bg-center" style="background-image: url('slide2.jpg')"></div>
+        <div class="swiper-slide bg-cover bg-center" style="background-image: url('slide3.jpg')"></div>
+      </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Our Services</h2>
-      <ul>
-        <li><strong>Copper Cathode & Gold Trading</strong> – Verified DRC-origin materials with SGS/BV inspection.</li>
-        <li><strong>CIF & FOB Trade Structuring</strong> – Escrow, LC, and UCP600-compliant mechanisms.</li>
-        <li><strong>Mandate Representation</strong> – Legal, vetted representation of licensed exporters.</li>
-      </ul>
+  <!-- ABOUT US -->
+  <section id="about" class="max-w-7xl mx-auto p-8 fade-in">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4">About Us</h2>
+    <p class="mb-4">
+      <strong>SBNGD Security</strong> is a premier security services provider headquartered in Randburg, South Africa.
+      Established in 2020, we deliver tailored solutions to ensure safety and peace of mind across various sectors,
+      including residential estates, public institutions, commercial properties, and events.
+    </p>
+    <p class="mb-4">
+      Our team is composed of highly trained professionals equipped with the latest technology to respond effectively
+      to threats and incidents. With a strong focus on integrity, professionalism, and accountability, we have earned
+      the trust of numerous clients and partners across the country.
+    </p>
+    <p>
+      In response to the growing crime rates, our mission is to be a reliable and efficient force that supports law
+      enforcement by protecting people, properties, and public spaces.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-white py-12 fade-in">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900">Our Services</h2>
+
+      <!-- Manned Guarding -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">Manned Guarding</h3>
+        <p class="mb-4">Our well-trained security officers provide 24/7 physical presence at commercial, industrial, and residential sites. They deter criminal activity and act quickly in emergencies.</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <img src="manned1.jpg" class="rounded-lg shadow-md" />
+          <img src="manned2.jpg" class="rounded-lg shadow-md" />
+          <img src="manned3.jpg" class="rounded-lg shadow-md" />
+        </div>
+      </div>
+
+      <!-- Mobile Patrols -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">Mobile Patrols</h3>
+        <p class="mb-4">Our patrol vehicles conduct regular and randomized patrols with high visibility, equipped with GPS and two-way radios for rapid response and deterrence.</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <img src="mobile1.jpg" class="rounded-lg shadow-md" />
+          <img src="mobile2.jpg" class="rounded-lg shadow-md" />
+          <img src="mobile3.jpg" class="rounded-lg shadow-md" />
+        </div>
+      </div>
+
+      <!-- Alarm Monitoring -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">Alarm Monitoring & Response</h3>
+        <p class="mb-4">State-of-the-art alarm systems monitored 24/7 by our control room. Our response teams are dispatched instantly to assess and neutralize threats.</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <img src="alarm1.jpg" class="rounded-lg shadow-md" />
+          <img src="alarm2.jpg" class="rounded-lg shadow-md" />
+          <img src="alarm3.jpg" class="rounded-lg shadow-md" />
+        </div>
+      </div>
+
+      <!-- Access Control -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">Access Control</h3>
+        <p class="mb-4">We implement and maintain biometric, card-based, and keypad entry systems to manage who enters your premises—ideal for businesses and high-security zones.</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <img src="access1.jpg" class="rounded-lg shadow-md" />
+          <img src="access2.jpg" class="rounded-lg shadow-md" />
+          <img src="access3.jpg" class="rounded-lg shadow-md" />
+        </div>
+      </div>
+
+      <!-- Event Security -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Event Security</h3>
+        <p class="mb-4">From concerts and sports events to private gatherings, our experienced teams provide crowd control, VIP protection, and emergency response management.</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <img src="event1.jpg" class="rounded-lg shadow-md" />
+          <img src="event2.jpg" class="rounded-lg shadow-md" />
+          <img src="event3.jpg" class="rounded-lg shadow-md" />
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Why Choose Us</h2>
-      <p>We are a UK-registered entity with reliable legal, banking, and compliance infrastructure. Our team combines international trade expertise with deep African supply chain access.</p>
-      <a href="mailto:info@malilanicommodities.com" class="cta">Request a Deal Pack</a>
+  <!-- CONTACT -->
+  <section id="contact" class="bg-blue-50 py-12 px-8 fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4">Contact Us</h2>
+      <p class="mb-2">📍 <strong>Address:</strong> Unit 9 Gardens Office Park, Ateljee Street, Randburg, South Africa</p>
+      <p class="mb-2">📞 <strong>Phone:</strong> 010 634 2549</p>
+      <p class="mb-2">📧 <strong>Email:</strong> <a href="mailto:receptionsbn@gmail.com" class="text-blue-700 underline">receptionsbn@gmail.com</a></p>
     </div>
+  </section>
 
-    <div class="section contact-box">
-      <h2>Contact Us</h2>
-      <p><strong>📍 London Office:</strong> 71–75 Shelton Street, Covent Garden, London WC2H 9JQ</p>
-      <p><strong>📞 Phone:</strong> +44 20 8068 1234</p>
-      <p><strong>🌍 WhatsApp:</strong> +27 76 758 6402</p>
-      <p><strong>📧 Email:</strong> <a href="mailto:info@malilanicommodities.com">info@malilanicommodities.com</a></p>
-      <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/company/malilanicommodities" target="_blank">linkedin.com/company/malilanicommodities</a></p>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2025 Malilani Commodities UK Ltd. All rights reserved.
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 SBNGD Security. All rights reserved.</p>
   </footer>
 
+  <!-- Swiper JS -->
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 4000 },
+      effect: "fade",
+    });
+  </script>
 </body>
 </html>
